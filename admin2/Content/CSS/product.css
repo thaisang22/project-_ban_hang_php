@@ -1,0 +1,103 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-custom a {
+    padding: 5px 10px;
+    margin: 0 2px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 3px;
+}
+
+.pagination-custom a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+.btn-toggle {
+    position: relative;
+    width: 50px;
+    /* Điều chỉnh độ rộng của nút toggle */
+    height: 25px;
+    /* Điều chỉnh độ cao của nút toggle */
+    padding: 0;
+    overflow: hidden;
+    border-radius: 25px;
+    /* Đảm bảo góc cong để tạo hình dáng nút tròn */
+    cursor: pointer;
+    outline: none;
+    background-color: #ccc;
+    /* Màu nền của nút toggle */
+}
+
+.handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    /* Điều chỉnh độ rộng của thanh nút toggle */
+    height: 25px;
+    /* Điều chỉnh độ cao của thanh nút toggle */
+    background-color: #fff;
+    /* Màu của thanh nút toggle */
+    border-radius: 50%;
+    /* Đảm bảo thanh nút toggle có hình dáng tròn */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Thêm transition cho background-color */
+}
+
+.btn-toggle[aria-pressed="true"] .handle {
+    background-color: black;
+    /* Màu của thanh nút toggle khi nút được bật */
+    transform: translateX(25px);
+    /* Di chuyển thanh nút toggle khi nút được bật */
+}
+
+.btn-toggle:focus .handle {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    /* Hiển thị viền khi nút được focus */
+}
+.menu {   
+     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 15px;
+    /* Adjust spacing between menu items */
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    /* Link color */
+    padding: 8px 15px;
+    /* Padding around menu items */
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    /* Background color of menu items */
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #ddd;
+    /* Background color on hover */
+    color: #555;
+    /* Text color on hover */
+}
+.image-container {
+    width: 50px; /* Đặt chiều rộng cố định cho container */
+    height: 50px; /* Đặt chiều cao cố định cho container */
+    overflow: hidden; /* Ẩn phần nội dung vượt quá kích thước của container */
+}
+
+.image-container img {
+    width: 20%; /* Hình ảnh sẽ có chiều rộng 100% của container */
+    height: auto; /* Chiều cao tự động tính theo tỷ lệ */
+    display: block; /* Loại bỏ khoảng trắng dư thừa dưới ảnh */
+}

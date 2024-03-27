@@ -1,0 +1,180 @@
+.slidertuyendung {
+  /* the slides */
+  /* the parent */ }
+  .slidertuyendung .slick-dots {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    z-index: 1; }
+    .slidertuyendung .slick-dots button {
+      background: #D9D9D9;
+      border: none;
+      font-size: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin-right: 10px;
+      outline: none; }
+    .slidertuyendung .slick-dots .slick-active button {
+      background: linear-gradient(227.28deg, #EC0098 0%, #FF8159 100%); }
+  .slidertuyendung .slick-slide {
+    margin: 0 15px; }
+  .slidertuyendung .slick-list {
+    margin: 0 -15px; }
+  .slidertuyendung .slider-index.next {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    z-index: 9; }
+    .slidertuyendung .slider-index.next svg path {
+      stroke: #fff; }
+  .slidertuyendung .slider-index.prev {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    z-index: 9; }
+    .slidertuyendung .slider-index.prev svg {
+      transform: rotate(180deg); }
+      .slidertuyendung .slider-index.prev svg path {
+        stroke: #fff; }
+  .slidertuyendung .slick-arrow {
+    opacity: 0;
+    transition: 0.4s all ease; }
+  .slidertuyendung:hover .slick-arrow {
+    transition: 0.4s all ease;
+    opacity: 1; }
+
+#home-services .grid-uniform {
+  display: flex;
+  gap: 15px; }
+  #home-services .grid-uniform > div {
+    width: calc(100%/3 - 15px); }
+
+.tuyendungpage .blog-title {
+  text-align: center;
+  margin: 40px 0; }
+
+.tuyendungpage .flextuyendung {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #000;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  flex-wrap: wrap; }
+  .tuyendungpage .flextuyendung:last-child {
+    border-bottom: 0px solid #000; }
+  @media (max-width: 767px) {
+    .tuyendungpage .flextuyendung > div {
+      width: 100% !important; } }
+
+.tuyendungpage .blog-bodyflexgang .flextuyendung1 {
+  width: 35%; }
+  .tuyendungpage .blog-bodyflexgang .flextuyendung1 > div {
+    margin-bottom: 10px;
+    font-size: 16px; }
+  .tuyendungpage .blog-bodyflexgang .flextuyendung1 .title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px; }
+
+.tuyendungpage .blog-bodyflexgang .flextuyendung2 {
+  width: 50%; }
+  .tuyendungpage .blog-bodyflexgang .flextuyendung2 .dischi {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+
+.tuyendungpage .blog-bodyflexgang .flextuyendung3 {
+  width: 15%;
+  text-align: right; }
+  @media (max-width: 767px) {
+    .tuyendungpage .blog-bodyflexgang .flextuyendung3 {
+      text-align: left; } }
+  .tuyendungpage .blog-bodyflexgang .flextuyendung3 .popungtuyen {
+    color: #fff;
+    font-size: 16px;
+    background: #a80e0e;
+    text-decoration: none;
+    padding: 13px 23px;
+    display: inline-block;
+    margin-top: 20px; }
+
+.loggppup img {
+  max-width: 100px;
+  margin-bottom: 20px; }
+
+.insPopupNewlettersubmutflex {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap; }
+  @media (max-width: 767px) {
+    .insPopupNewlettersubmutflex {
+      margin-bottom: 5px; } }
+  .insPopupNewlettersubmutflex > div {
+    width: calc(100%/2 - 20px); }
+    @media (max-width: 767px) {
+      .insPopupNewlettersubmutflex > div {
+        width: calc(100%/1 - 20px); } }
+    .insPopupNewlettersubmutflex > div label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block; }
+
+.hotlinenhansu {
+  display: flex;
+  align-items: center;
+  gap: 20px; }
+  .hotlinenhansu div {
+    font-weight: bold;
+    font-size: 15px; }
+
+.teptin {
+  background: #ccc;
+  display: inline-block;
+  border-radius: 28px;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer; }
+
+.dangtaianh {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: none; }
+
+.dangtaianh.active {
+  display: flex; }
+
+.linkteptin {
+  font-size: 16px;
+  font-weight: bold; }
+
+@media (max-width: 767px) {
+  .cvungvien {
+    margin-top: 10px; } }
+
+.swal2-container {
+  position: fixed;
+  z-index: 99999999; }
